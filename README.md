@@ -1,34 +1,28 @@
-# Election_Analysis
+# Election Analysis
 
-## Project Overview
-A Colorado Board of Elections employee has given you the following tasks to complete the election audit of a recent local congressional election.
+## Overview of Project
 
-1. Calculate the total number of votes cast.
-2. Get a complete list of candidates who received votes.
-3.Calculate the percentage of votes each candidate won.
-Determine the winner of the election based on popular vote.
+### Purpose
+Steve's family is interested in investing money into stocks, but they do not have a clear understanding of how these stocks are performing. Using vba and excel, we were able to analyze the stock's total volume and return over a specific year. Calculating the total volume is important because if a stock is traded often, Steve's family believes that it's price more accurately represents the value of the stock. The return is also important because you can determine whether there was a positive return over the specified year. The purpose of this project was to introduce us to the concept of refactoring code to make it faster and more efficient. The original code we had written, although accomplished the same thing for these 12 stocks, took significantly more time. The time it takes to run the code would make a big difference if you were analyzing all of the stocks in the stock market. The purpose of this refactored code is to enable Steve to use this code to expand his research further than the 12 stocks he is currently looking into. 
 
-## Resources
--Data Source: election_results.csv
-Software: Python 3.6.1, Visual Studio Code, 1.38.1
+## Results
+
+### Refactoring the All Stocks Analysis VBA Code
+The purpose of refactoring the code is to make it more efficient. In order to do this, I created 3 arrays to compute the total volume and the return: tickerVolumes(12), tickerStartingPrices(12), and tickerEndingPrices(12). tickerVolumes(12) held the volume, tickerStartingPrices(12) held the starting price, and tickerEndingPrices(12) held the ending price. I also created a a new variable called tickerIndex. The tickerIndex variable was used to match the ticker arrray with each array I created respectively. Using the arrays I created, I used nested for loops to loop through the data and accurately complete the analysis. Compared to my original code, this new refactored code was much more efficient. Please see images of the time it took to complete the analysis using the original code and the refactored code. You can see that my refactored code performed the analysis at a significantly faster rate.
+/Users/emily/Documents/Columbia/Module 2 Challenge
+#### Refactored Code Time Stamp
+![Refactored Code Time Stamp 2017](/Resources/VBA_Challenge_2017.png)
+![Refactored Code Time Stamp 2018](/Resources/VBA_Challenge_2018.png)
+
+#### Original Code Time Stamp
+![Original Code Time Stamp 2017](/Resources/VBA_Challenge_2017_old.png)
+![Original Code Time Stamp 2018](/Resources/VBA_Challenge_2018_old.png)
 
 ## Summary
-The analysis of the election show that: 
-- There were 369,711 votes cast in the election.
-- The candidates were:
-  - Charles Casper Stockham
-  - Diana DeGette
-  - Raymon Anthony Doane
--The candidate results were that: 
-  - Charles Casper Stockham received 23.0% of the vote and 85,213 number of votes
-  - Diana DeGette received 73.8% of the vote and 272,892 number of votes.
-  - Raymon Anthony Doane received 3.1% of the vote and 11,606 number of votes.
- -The winner of the election was:
-  -Diana Degette, who received 73.8% of the vote and 272,892 number of votes.
-  
-## Challenge Overview
-In this challenge we used Python code to read a csv file and determine the outcome of an election. We then printed our results to .txt file. 
 
-## Challenge Summary
-By using Python code, we were able to determine that Diana Degette won the election with 272,892 votes and 73.8% of the vote. 
-  
+### Advantages and Disadvantages of Refactoring Code 
+The advantages of refactoring code include making the code more clear and easily understood. This is imporant if someone else were to try to work on your code in the future increasing its longevitiy and uses for future projects. Refactoring the code also leads to faster programming and more efficient analysis. The disadvantage of refactoring code is you can take the original working code and introduce new bugs and errors.
+
+### Advantages and Disadvantages of the Original and Refactored VBA Script
+The advantage of the refactored VBA script is it performs the analysis at a much faster rate. This is important because if we wanted to use this script to run an analysis on a larger data set, it would be able to do so quickly compared to our original script. The disadvante of the refactored VBA Script is that although it is able to analyze larger amounts of data, we must introduce the data in the exact same format for this code to be successful. Another disadvantage to refactoring code is that it is a time consuming process. Although the end result was successful, it took me a while to work through debugging and errors that I had introduced along the way. 
+
